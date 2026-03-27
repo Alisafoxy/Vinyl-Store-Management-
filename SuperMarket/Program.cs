@@ -16,7 +16,12 @@ namespace SuperMarket
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            /*Application.Run(new Form1());*/
+            /*Application.Run(new Cachier1());*/
+            /* Application.Run(new SrockIn());*/
+            /*Application.Run(new Settle());*/
+            Application.Run(new Login());
+           /* Application.Run(new DailySales());*/
         }
     }
 }

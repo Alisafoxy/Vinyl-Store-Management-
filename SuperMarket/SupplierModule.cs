@@ -75,5 +75,37 @@ namespace SuperMarket
             }
 
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
+
+        private void btnUpdateModule_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageBox.Show("Are you shure you want to update this Supplier?", "CONFIRM", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    cn.Open();
+                    cmd = new SqlCommand("UPDATE tbSupplier SET supplier=@supplier, address=@address, contactperson=@contactperson, phone=@phone, email=@email, fax=@fax WHERE id=@id", cn);
+                    cmd.Parameters.AddWithValue("@id", lblId.Text);
+                    cmd.Parameters.AddWithValue("@supplier", txtSupplierName.Text);
+                    cmd.Parameters.AddWithValue("@address", txtAddress.Text);
+                    cmd.Parameters.AddWithValue("@contactperson", txtContactP.Text);
+                    cmd.Parameters.AddWithValue("@phone", txtPhone.Text);
+                    cmd.Parameters.AddWithValue("@email", txtEmail.Text);
+                    cmd.Parameters.AddWithValue("@fax", txtFax.Text);
+                    cmd.ExecuteNonQuery();
+                    cn.Close();
+                    MessageBox.Show("Record has been successfully updated!", "update supplier", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Dispose();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Warning");
+            }
+        }
     }
 }

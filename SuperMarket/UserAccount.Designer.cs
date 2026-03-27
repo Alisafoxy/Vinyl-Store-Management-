@@ -45,30 +45,30 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.lblUserName = new System.Windows.Forms.Label();
-            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblCurrentPas = new System.Windows.Forms.Label();
-            this.txtCurrentPass = new System.Windows.Forms.TextBox();
-            this.lblNewPass = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.lblReTypePass = new System.Windows.Forms.Label();
-            this.txtReTypePass = new System.Windows.Forms.TextBox();
-            this.btnPassCancel = new System.Windows.Forms.Button();
-            this.btnPassSave = new System.Windows.Forms.Button();
             this.dgvUser = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.btnPassCancel = new System.Windows.Forms.Button();
+            this.btnPassSave = new System.Windows.Forms.Button();
+            this.txtReTypePass = new System.Windows.Forms.TextBox();
+            this.lblReTypePass = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.lblNewPass = new System.Windows.Forms.Label();
+            this.txtCurrentPass = new System.Windows.Forms.TextBox();
+            this.lblCurrentPas = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
-            this.metroTabPage2.SuspendLayout();
             this.metroTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
+            this.metroTabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,9 +76,9 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(108)))));
             this.panel1.Controls.Add(this.lblManageBrand);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 453);
+            this.panel1.Location = new System.Drawing.Point(0, 428);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1182, 100);
+            this.panel1.Size = new System.Drawing.Size(1182, 125);
             this.panel1.TabIndex = 3;
             // 
             // lblManageBrand
@@ -91,7 +91,7 @@
             this.lblManageBrand.Name = "lblManageBrand";
             this.lblManageBrand.Size = new System.Drawing.Size(237, 70);
             this.lblManageBrand.TabIndex = 0;
-            this.lblManageBrand.Text = "Manage Settings";
+            this.lblManageBrand.Text = "User Settings";
             this.lblManageBrand.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // metroTabControl1
@@ -123,7 +123,7 @@
             this.metroTabPage1.Controls.Add(this.lblUserName);
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.HorizontalScrollbarSize = 8;
+            this.metroTabPage1.HorizontalScrollbarSize = 5;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage1.Name = "metroTabPage1";
             this.metroTabPage1.Size = new System.Drawing.Size(1146, 383);
@@ -131,7 +131,7 @@
             this.metroTabPage1.Text = "Create Account";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.VerticalScrollbarSize = 7;
+            this.metroTabPage1.VerticalScrollbarSize = 4;
             // 
             // btnCancelAcc
             // 
@@ -139,12 +139,13 @@
             this.btnCancelAcc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(198)))), ((int)(((byte)(142)))));
             this.btnCancelAcc.FlatAppearance.BorderSize = 0;
             this.btnCancelAcc.ForeColor = System.Drawing.Color.White;
-            this.btnCancelAcc.Location = new System.Drawing.Point(922, 338);
+            this.btnCancelAcc.Location = new System.Drawing.Point(709, 338);
             this.btnCancelAcc.Name = "btnCancelAcc";
             this.btnCancelAcc.Size = new System.Drawing.Size(128, 45);
             this.btnCancelAcc.TabIndex = 11;
             this.btnCancelAcc.Text = "Cancel";
             this.btnCancelAcc.UseVisualStyleBackColor = false;
+            this.btnCancelAcc.Click += new System.EventHandler(this.btnCancelAcc_Click);
             // 
             // btnSaveAcc
             // 
@@ -152,7 +153,7 @@
             this.btnSaveAcc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(106)))), ((int)(((byte)(78)))));
             this.btnSaveAcc.FlatAppearance.BorderSize = 0;
             this.btnSaveAcc.ForeColor = System.Drawing.Color.White;
-            this.btnSaveAcc.Location = new System.Drawing.Point(788, 338);
+            this.btnSaveAcc.Location = new System.Drawing.Point(551, 338);
             this.btnSaveAcc.Name = "btnSaveAcc";
             this.btnSaveAcc.Size = new System.Drawing.Size(128, 45);
             this.btnSaveAcc.TabIndex = 10;
@@ -168,7 +169,7 @@
             "Cashier"});
             this.cmbRole.Location = new System.Drawing.Point(316, 260);
             this.cmbRole.Name = "cmbRole";
-            this.cmbRole.Size = new System.Drawing.Size(734, 29);
+            this.cmbRole.Size = new System.Drawing.Size(206, 29);
             this.cmbRole.TabIndex = 4;
             // 
             // lblFullName
@@ -185,15 +186,15 @@
             // 
             this.txtFullName.Location = new System.Drawing.Point(316, 198);
             this.txtFullName.Name = "txtFullName";
-            this.txtFullName.Size = new System.Drawing.Size(734, 30);
+            this.txtFullName.Size = new System.Drawing.Size(521, 30);
             this.txtFullName.TabIndex = 3;
             // 
             // txtReTypePassword
             // 
             this.txtReTypePassword.Location = new System.Drawing.Point(316, 139);
             this.txtReTypePassword.Name = "txtReTypePassword";
-            this.txtReTypePassword.Size = new System.Drawing.Size(734, 30);
-            this.txtReTypePassword.TabIndex = 3;
+            this.txtReTypePassword.Size = new System.Drawing.Size(521, 30);
+            this.txtReTypePassword.TabIndex = 2;
             // 
             // lblRole
             // 
@@ -219,8 +220,8 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(316, 83);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(734, 30);
-            this.txtPassword.TabIndex = 3;
+            this.txtPassword.Size = new System.Drawing.Size(521, 30);
+            this.txtPassword.TabIndex = 1;
             // 
             // lblPassword
             // 
@@ -236,8 +237,8 @@
             // 
             this.txtUserName.Location = new System.Drawing.Point(316, 26);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(734, 30);
-            this.txtUserName.TabIndex = 3;
+            this.txtUserName.Size = new System.Drawing.Size(521, 30);
+            this.txtUserName.TabIndex = 0;
             // 
             // lblUserName
             // 
@@ -249,37 +250,13 @@
             this.lblUserName.TabIndex = 2;
             this.lblUserName.Text = "Username:";
             // 
-            // metroTabPage2
-            // 
-            this.metroTabPage2.Controls.Add(this.btnPassCancel);
-            this.metroTabPage2.Controls.Add(this.btnPassSave);
-            this.metroTabPage2.Controls.Add(this.txtReTypePass);
-            this.metroTabPage2.Controls.Add(this.lblReTypePass);
-            this.metroTabPage2.Controls.Add(this.textBox3);
-            this.metroTabPage2.Controls.Add(this.lblNewPass);
-            this.metroTabPage2.Controls.Add(this.txtCurrentPass);
-            this.metroTabPage2.Controls.Add(this.lblCurrentPas);
-            this.metroTabPage2.Controls.Add(this.textBox1);
-            this.metroTabPage2.Controls.Add(this.label1);
-            this.metroTabPage2.HorizontalScrollbarBarColor = true;
-            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 8;
-            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
-            this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(1146, 383);
-            this.metroTabPage2.TabIndex = 1;
-            this.metroTabPage2.Text = "Change Password";
-            this.metroTabPage2.VerticalScrollbarBarColor = true;
-            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 7;
-            // 
             // metroTabPage3
             // 
             this.metroTabPage3.BackColor = System.Drawing.Color.Transparent;
             this.metroTabPage3.Controls.Add(this.dgvUser);
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
             this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.HorizontalScrollbarSize = 8;
+            this.metroTabPage3.HorizontalScrollbarSize = 5;
             this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage3.Name = "metroTabPage3";
             this.metroTabPage3.Size = new System.Drawing.Size(1146, 383);
@@ -287,101 +264,7 @@
             this.metroTabPage3.Text = "Activate/UnActivate Account";
             this.metroTabPage3.VerticalScrollbarBarColor = true;
             this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.VerticalScrollbarSize = 7;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(322, 46);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(734, 30);
-            this.textBox1.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Aquamarine;
-            this.label1.Location = new System.Drawing.Point(106, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 21);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Username:";
-            // 
-            // lblCurrentPas
-            // 
-            this.lblCurrentPas.AutoSize = true;
-            this.lblCurrentPas.BackColor = System.Drawing.Color.Aquamarine;
-            this.lblCurrentPas.Location = new System.Drawing.Point(106, 110);
-            this.lblCurrentPas.Name = "lblCurrentPas";
-            this.lblCurrentPas.Size = new System.Drawing.Size(166, 21);
-            this.lblCurrentPas.TabIndex = 4;
-            this.lblCurrentPas.Text = "Current Password:";
-            // 
-            // txtCurrentPass
-            // 
-            this.txtCurrentPass.Location = new System.Drawing.Point(322, 110);
-            this.txtCurrentPass.Name = "txtCurrentPass";
-            this.txtCurrentPass.Size = new System.Drawing.Size(734, 30);
-            this.txtCurrentPass.TabIndex = 5;
-            // 
-            // lblNewPass
-            // 
-            this.lblNewPass.AutoSize = true;
-            this.lblNewPass.BackColor = System.Drawing.Color.Aquamarine;
-            this.lblNewPass.Location = new System.Drawing.Point(106, 189);
-            this.lblNewPass.Name = "lblNewPass";
-            this.lblNewPass.Size = new System.Drawing.Size(139, 21);
-            this.lblNewPass.TabIndex = 4;
-            this.lblNewPass.Text = "New Password:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(322, 186);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(734, 30);
-            this.textBox3.TabIndex = 5;
-            // 
-            // lblReTypePass
-            // 
-            this.lblReTypePass.AutoSize = true;
-            this.lblReTypePass.BackColor = System.Drawing.Color.Aquamarine;
-            this.lblReTypePass.Location = new System.Drawing.Point(106, 261);
-            this.lblReTypePass.Name = "lblReTypePass";
-            this.lblReTypePass.Size = new System.Drawing.Size(167, 21);
-            this.lblReTypePass.TabIndex = 4;
-            this.lblReTypePass.Text = "Re-Type Password";
-            // 
-            // txtReTypePass
-            // 
-            this.txtReTypePass.Location = new System.Drawing.Point(322, 258);
-            this.txtReTypePass.Name = "txtReTypePass";
-            this.txtReTypePass.Size = new System.Drawing.Size(734, 30);
-            this.txtReTypePass.TabIndex = 5;
-            // 
-            // btnPassCancel
-            // 
-            this.btnPassCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPassCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(198)))), ((int)(((byte)(142)))));
-            this.btnPassCancel.FlatAppearance.BorderSize = 0;
-            this.btnPassCancel.ForeColor = System.Drawing.Color.White;
-            this.btnPassCancel.Location = new System.Drawing.Point(928, 342);
-            this.btnPassCancel.Name = "btnPassCancel";
-            this.btnPassCancel.Size = new System.Drawing.Size(128, 45);
-            this.btnPassCancel.TabIndex = 13;
-            this.btnPassCancel.Text = "Cancel";
-            this.btnPassCancel.UseVisualStyleBackColor = false;
-            // 
-            // btnPassSave
-            // 
-            this.btnPassSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPassSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(106)))), ((int)(((byte)(78)))));
-            this.btnPassSave.FlatAppearance.BorderSize = 0;
-            this.btnPassSave.ForeColor = System.Drawing.Color.White;
-            this.btnPassSave.Location = new System.Drawing.Point(794, 342);
-            this.btnPassSave.Name = "btnPassSave";
-            this.btnPassSave.Size = new System.Drawing.Size(128, 45);
-            this.btnPassSave.TabIndex = 12;
-            this.btnPassSave.Text = "Save";
-            this.btnPassSave.UseVisualStyleBackColor = false;
+            this.metroTabPage3.VerticalScrollbarSize = 4;
             // 
             // dgvUser
             // 
@@ -458,6 +341,124 @@
             this.Delete.Name = "Delete";
             this.Delete.Width = 6;
             // 
+            // metroTabPage2
+            // 
+            this.metroTabPage2.Controls.Add(this.btnPassCancel);
+            this.metroTabPage2.Controls.Add(this.btnPassSave);
+            this.metroTabPage2.Controls.Add(this.txtReTypePass);
+            this.metroTabPage2.Controls.Add(this.lblReTypePass);
+            this.metroTabPage2.Controls.Add(this.textBox3);
+            this.metroTabPage2.Controls.Add(this.lblNewPass);
+            this.metroTabPage2.Controls.Add(this.txtCurrentPass);
+            this.metroTabPage2.Controls.Add(this.lblCurrentPas);
+            this.metroTabPage2.Controls.Add(this.textBox1);
+            this.metroTabPage2.Controls.Add(this.label1);
+            this.metroTabPage2.HorizontalScrollbarBarColor = true;
+            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.HorizontalScrollbarSize = 5;
+            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage2.Name = "metroTabPage2";
+            this.metroTabPage2.Size = new System.Drawing.Size(1146, 383);
+            this.metroTabPage2.TabIndex = 1;
+            this.metroTabPage2.Text = "Change Password";
+            this.metroTabPage2.VerticalScrollbarBarColor = true;
+            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.VerticalScrollbarSize = 4;
+            // 
+            // btnPassCancel
+            // 
+            this.btnPassCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPassCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(198)))), ((int)(((byte)(142)))));
+            this.btnPassCancel.FlatAppearance.BorderSize = 0;
+            this.btnPassCancel.ForeColor = System.Drawing.Color.White;
+            this.btnPassCancel.Location = new System.Drawing.Point(619, 342);
+            this.btnPassCancel.Name = "btnPassCancel";
+            this.btnPassCancel.Size = new System.Drawing.Size(128, 45);
+            this.btnPassCancel.TabIndex = 13;
+            this.btnPassCancel.Text = "Cancel";
+            this.btnPassCancel.UseVisualStyleBackColor = false;
+            // 
+            // btnPassSave
+            // 
+            this.btnPassSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPassSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(106)))), ((int)(((byte)(78)))));
+            this.btnPassSave.FlatAppearance.BorderSize = 0;
+            this.btnPassSave.ForeColor = System.Drawing.Color.White;
+            this.btnPassSave.Location = new System.Drawing.Point(447, 342);
+            this.btnPassSave.Name = "btnPassSave";
+            this.btnPassSave.Size = new System.Drawing.Size(128, 45);
+            this.btnPassSave.TabIndex = 12;
+            this.btnPassSave.Text = "Save";
+            this.btnPassSave.UseVisualStyleBackColor = false;
+            // 
+            // txtReTypePass
+            // 
+            this.txtReTypePass.Location = new System.Drawing.Point(322, 258);
+            this.txtReTypePass.Name = "txtReTypePass";
+            this.txtReTypePass.Size = new System.Drawing.Size(383, 30);
+            this.txtReTypePass.TabIndex = 5;
+            // 
+            // lblReTypePass
+            // 
+            this.lblReTypePass.AutoSize = true;
+            this.lblReTypePass.BackColor = System.Drawing.Color.Aquamarine;
+            this.lblReTypePass.Location = new System.Drawing.Point(106, 261);
+            this.lblReTypePass.Name = "lblReTypePass";
+            this.lblReTypePass.Size = new System.Drawing.Size(167, 21);
+            this.lblReTypePass.TabIndex = 4;
+            this.lblReTypePass.Text = "Re-Type Password";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(322, 186);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(383, 30);
+            this.textBox3.TabIndex = 5;
+            // 
+            // lblNewPass
+            // 
+            this.lblNewPass.AutoSize = true;
+            this.lblNewPass.BackColor = System.Drawing.Color.Aquamarine;
+            this.lblNewPass.Location = new System.Drawing.Point(106, 189);
+            this.lblNewPass.Name = "lblNewPass";
+            this.lblNewPass.Size = new System.Drawing.Size(139, 21);
+            this.lblNewPass.TabIndex = 4;
+            this.lblNewPass.Text = "New Password:";
+            // 
+            // txtCurrentPass
+            // 
+            this.txtCurrentPass.Location = new System.Drawing.Point(322, 110);
+            this.txtCurrentPass.Name = "txtCurrentPass";
+            this.txtCurrentPass.Size = new System.Drawing.Size(383, 30);
+            this.txtCurrentPass.TabIndex = 5;
+            // 
+            // lblCurrentPas
+            // 
+            this.lblCurrentPas.AutoSize = true;
+            this.lblCurrentPas.BackColor = System.Drawing.Color.Aquamarine;
+            this.lblCurrentPas.Location = new System.Drawing.Point(106, 110);
+            this.lblCurrentPas.Name = "lblCurrentPas";
+            this.lblCurrentPas.Size = new System.Drawing.Size(166, 21);
+            this.lblCurrentPas.TabIndex = 4;
+            this.lblCurrentPas.Text = "Current Password:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(322, 46);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(383, 30);
+            this.textBox1.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Aquamarine;
+            this.label1.Location = new System.Drawing.Point(106, 49);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 21);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Username:";
+            // 
             // UserAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
@@ -473,14 +474,15 @@
             this.Name = "UserAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserAccount";
+            this.Load += new System.EventHandler(this.UserAccount_Load);
             this.panel1.ResumeLayout(false);
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage1.PerformLayout();
-            this.metroTabPage2.ResumeLayout(false);
-            this.metroTabPage2.PerformLayout();
             this.metroTabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
+            this.metroTabPage2.ResumeLayout(false);
+            this.metroTabPage2.PerformLayout();
             this.ResumeLayout(false);
 
         }

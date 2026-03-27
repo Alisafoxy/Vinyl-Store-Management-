@@ -109,6 +109,7 @@
             this.btnUpdateModule.TabIndex = 23;
             this.btnUpdateModule.Text = "Update";
             this.btnUpdateModule.UseVisualStyleBackColor = false;
+            this.btnUpdateModule.Click += new System.EventHandler(this.btnUpdateModule_Click);
             // 
             // lblId
             // 
@@ -133,6 +134,7 @@
             this.btnCancel.TabIndex = 25;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // lblPhone
             // 

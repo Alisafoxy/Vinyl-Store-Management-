@@ -137,6 +137,7 @@ namespace SuperMarket
 
         private void btnStockEntry_Click(object sender, EventArgs e)
         {
+            openChildForm(new SrockIn());
             HideSubMenu();
 
         }
@@ -176,17 +177,26 @@ namespace SuperMarket
 
         private void btnUser_Click(object sender, EventArgs e)
         {
+            openChildForm(new UserAccount());
             HideSubMenu();
         }
 
         private void btnStore_Click(object sender, EventArgs e)
         {
             HideSubMenu();
+            Store store = new Store();
+            store.ShowDialog();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
             HideSubMenu();
+            if (MessageBox.Show("LogOut Application?", "LogOut", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Hide();
+                Login login = new Login();
+                login.ShowDialog();
+            }
         }
     }
 }

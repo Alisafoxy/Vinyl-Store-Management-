@@ -535,11 +535,11 @@
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.Button btnSetting;
         private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.Label lblRole;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lblUserName;
-        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblTitle;
+        public System.Windows.Forms.Label lblUserName;
+        public System.Windows.Forms.Label lblRole;
+        public System.Windows.Forms.Label lblName;
     }
 }
 

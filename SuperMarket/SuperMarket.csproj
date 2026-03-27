@@ -67,6 +67,18 @@
     <Compile Include="BrandModule.Designer.cs">
       <DependentUpon>BrandModule.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cachier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cachier.Designer.cs">
+      <DependentUpon>Cachier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cachier1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cachier1.Designer.cs">
+      <DependentUpon>Cachier1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Category.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,12 +91,42 @@
     <Compile Include="CategoryModule.Designer.cs">
       <DependentUpon>CategoryModule.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailySales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailySales.Designer.cs">
+      <DependentUpon>DailySales.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBconnection.cs" />
+    <Compile Include="Discount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Discount.Designer.cs">
+      <DependentUpon>Discount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LookUpProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LookUpProduct.Designer.cs">
+      <DependentUpon>LookUpProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="Product.cs">
       <SubType>Form</SubType>
@@ -98,8 +140,38 @@
     <Compile Include="ProductModule.Designer.cs">
       <DependentUpon>ProductModule.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProductStockIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductStockIn.Designer.cs">
+      <DependentUpon>ProductStockIn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Qty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Qty.Designer.cs">
+      <DependentUpon>Qty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settle.Designer.cs">
+      <DependentUpon>Settle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SrockIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SrockIn.Designer.cs">
+      <DependentUpon>SrockIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store.Designer.cs">
+      <DependentUpon>Store.cs</DependentUpon>
+    </Compile>
     <Compile Include="Supplier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,20 +196,44 @@
     <EmbeddedResource Include="BrandModule.resx">
       <DependentUpon>BrandModule.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cachier.resx">
+      <DependentUpon>Cachier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cachier1.resx">
+      <DependentUpon>Cachier1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Category.resx">
       <DependentUpon>Category.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CategoryModule.resx">
       <DependentUpon>CategoryModule.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailySales.resx">
+      <DependentUpon>DailySales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Discount.resx">
+      <DependentUpon>Discount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LookUpProduct.resx">
+      <DependentUpon>LookUpProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Product.resx">
       <DependentUpon>Product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductModule.resx">
       <DependentUpon>ProductModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductStockIn.resx">
+      <DependentUpon>ProductStockIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -149,6 +245,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Qty.resx">
+      <DependentUpon>Qty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settle.resx">
+      <DependentUpon>Settle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SrockIn.resx">
+      <DependentUpon>SrockIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store.resx">
+      <DependentUpon>Store.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Supplier.resx">
       <DependentUpon>Supplier.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,6 +318,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\Key.png" />
+    <None Include="Resources\Lock1.png" />
+    <None Include="Resources\Male User1.png" />
+    <None Include="Resources\User Female.png" />
+    <None Include="Resources\Shop1.png" />
+    <None Include="Resources\Shop.png" />
+    <None Include="Resources\Checked Checkbox.png" />
+    <None Include="Resources\Trolley.png" />
+    <None Include="Resources\Shopping Cart.png" />
+    <None Include="Resources\Buy.png" />
+    <None Include="Resources\Search_cachier.png" />
+    <None Include="Resources\Close Window.png" />
+    <None Include="Resources\Minus.png" />
+    <None Include="Resources\Plus.png" />
+    <None Include="Resources\Male User.png" />
+    <None Include="Resources\Group.png" />
     <None Include="Resources\Supplier2.png" />
     <None Include="Resources\Supplier.png" />
     <None Include="Resources\Users Settings2.png" />
